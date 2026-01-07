@@ -168,16 +168,8 @@ docker compose build --no-cache
 
 ## 👤 Author
 
-**Raji**
-Full‑Stack Developer
+**Raji S**
 
-**Skills:**
-
-* Docker
-* Node.js
-* React
-* PostgreSQL
-* Nginx
 
 ---
 
@@ -190,4 +182,5 @@ This repository is designed for:
 * Production‑style Docker deployments
 
 If Docker is running, **one command is all you need** 🚀
+
 
