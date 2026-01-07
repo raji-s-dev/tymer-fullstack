@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "typeRoots": ["./src/types", "./node_modules/@types"],   // ✔ KEEP THIS
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "./dist",
+    "rootDir": "./src",    // 🛠 FIX THIS
+    "lib": ["ES2020"],
+    "types": ["node", "express"] // 🛠 ADD THIS
+    
+  },
+  "include": ["**/*.ts", "db.ts"],
+  "exclude": ["node_modules", "dist"]
+}
