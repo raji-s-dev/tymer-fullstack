@@ -13,7 +13,7 @@ import googleCalendarRoutes from "./routes/googleCalendar.routes";
 
 
 dotenv.config();
-console.log("GOOGLE REDIRECT URI =", process.env.GOOGLE_REDIRECT_URI);
+
 const app = express();
 app.use(cors({
   origin: [
@@ -34,12 +34,6 @@ app.use("/tasks", taskRoutes);
 app.use("/ondemand", taskRoutes);
 
 startCooldownScheduler();
-
-console.log("Google ENV check:", {
-  id: !!process.env.GOOGLE_CALENDAR_CLIENT_ID,
-  secret: !!process.env.GOOGLE_CALENDAR_CLIENT_SECRET,
-  redirect: process.env.GOOGLE_REDIRECT_URI,
-});
 
 
 // 🛡 Protected Route – requires valid JWT
