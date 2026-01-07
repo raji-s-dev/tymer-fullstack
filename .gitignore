@@ -1,0 +1,16 @@
+# Node modules
+**/node_modules/
+
+# Logs
+*.log
+
+# Backend environment
+Tymer-backend/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: build outputs if you want to ignore them
+Tymer-backend/dist/
+Tymer-frontend/dist/
