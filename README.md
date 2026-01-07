@@ -6,7 +6,7 @@ Tymer is a **production-style, fully Dockerized full‑stack application** that 
 
 ## 📦 Tech Stack
 
-* **Frontend:** React, Vite, TypeScript
+* **Frontend:** React, Vite, TypeScript ,Tailwind
 * **Backend:** Node.js, Express, TypeScript
 * **Database:** PostgreSQL
 * **Reverse Proxy:** Nginx
@@ -190,3 +190,4 @@ This repository is designed for:
 * Production‑style Docker deployments
 
 If Docker is running, **one command is all you need** 🚀
+
