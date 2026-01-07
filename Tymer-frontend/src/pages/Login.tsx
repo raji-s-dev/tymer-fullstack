@@ -30,8 +30,8 @@ export default function Login() {
   const handleSignup = async () => {
     const res = await signup(name, email, password);
 
-    const data = await res.json();
-    alert(data.error || "Something went wrong");
+   
+    
     if (!res.ok) return;
 
     setStep(2); // Go to OTP
