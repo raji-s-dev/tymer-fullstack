@@ -1,5 +1,7 @@
 # Tymer – Intelligent Task & Time Management System
 
+🔗 **Live Demo:** https://tymer-frontend.vercel.app/
+
 Tymer is a **full-stack, production-style task management web application** that enables users to create, schedule, and monitor tasks using dynamic **countdown and count-up timers**.
 
 The application supports **real-time timer tracking, cooldown monitoring, Google Calendar integration, and secure authentication**, all deployed in a fully Dockerized environment.
@@ -355,6 +357,7 @@ This repository is designed for:
 * Production‑style Docker deployments
 
 If Docker is running, **one command is all you need** 🚀
+
 
 
 
