@@ -1,16 +1,189 @@
-# Tymer – Full Stack Dockerized Application
+# Tymer – Intelligent Task & Time Management System
 
-Tymer is a **production-style, fully Dockerized full‑stack application** that can be started with **a single Docker command**. The repository bundles the **frontend, backend, database, and reverse proxy** into a clean, reproducible setup.
+Tymer is a **full-stack, production-style task management web application** that enables users to create, schedule, and monitor tasks using dynamic **countdown and count-up timers**.
+
+The application supports **real-time timer tracking, cooldown monitoring, Google Calendar integration, and secure authentication**, all deployed in a fully Dockerized environment.
+
+Tymer is designed to simulate a **real-world scalable SaaS architecture**.
+
+---
+
+## 🚀 Problem Statement
+
+Modern task management tools allow scheduling but lack **dynamic timer intelligence** such as:
+
+- Live countdown tracking  
+- Post-completion time tracking  
+- Cooldown monitoring  
+- Granular time-based execution states  
+
+Tymer solves this by combining:
+
+- Scheduled task automation  
+- On-demand task execution  
+- Real-time countdown & count-up timers  
+- Cross-platform calendar synchronization  
+
+---
+
+## ✨ Core Features
+
+### 🔐 Authentication System
+
+Tymer supports secure multi-method authentication:
+
+- ✅ Google OAuth Login  
+- ✅ Email-based Signup / Signin  
+- ✅ Gmail OTP Verification  
+- 🔒 Secure JWT-based session handling  
+
+---
+
+### 📋 Task Management (Full CRUD)
+
+Users can:
+
+- Create tasks  
+- View tasks  
+- Update tasks  
+- Delete tasks  
+
+Each task contains:
+
+- Category (Scheduled / On-Demand)  
+- Duration  
+- Start Time  
+- Cooldown Period (optional)  
+- Execution State  
+
+---
+
+## ⏳ Intelligent Timer System
+
+Tymer includes two dynamic timer mechanisms:
+
+---
+
+### 1️⃣ Countdown Timer (Execution Timer)
+
+#### 🔹 Scheduled Tasks
+
+- User selects future start time  
+- Task automatically transitions to **Active state**  
+- Countdown begins when scheduled time is reached  
+- Reminder is triggered upon activation  
+- Full-screen timer view available  
+
+#### 🔹 On-Demand Tasks
+
+- Task remains in **Available state**  
+- Countdown starts only when user manually triggers it  
+- Runs until duration completes  
+
+**Supported Granularity:**
+
+- Hours  
+- Minutes  
+- Seconds  
+
+---
+
+### 2️⃣ Count-Up Timer (Post-Completion Tracking)
+
+Once a task is marked as completed:
+
+- A count-up timer starts automatically  
+- Tracks time elapsed since completion  
+- Helps measure productivity gaps  
+- Useful for cooldown monitoring  
+
+This creates a lifecycle:
+Available → Active → Completed → Cooldown Tracking
+
+
+---
+
+## 🗓 Google Calendar Integration
+
+Tymer supports **bidirectional synchronization**:
+
+### Import from Google Calendar
+
+- External calendar events can be imported as scheduled tasks  
+
+### Export to Google Calendar
+
+- Scheduled tasks created in Tymer can be pushed to Google Calendar  
+
+This ensures:
+
+- No task duplication  
+- Centralized time management  
+- Cross-platform consistency  
+
+---
+
+## 🖥 Dashboard Experience
+
+The landing page presents:
+
+- A tiled layout of all tasks  
+- Real-time ticking countdown timers  
+- Visual state indicators  
+- Smooth transitions between task states  
+
+The interface is optimized for:
+
+- High visibility  
+- Time-awareness  
+- Productivity tracking  
+
+---
+
+## 🏗 Architecture Overview
+
+Tymer follows a production-style architecture:
+
+- Frontend served via Nginx  
+- Backend API routed through reverse proxy  
+- PostgreSQL containerized database  
+- Environment-based configuration  
+- Docker Compose orchestration  
+
+This mirrors real-world deployment practices.
 
 ---
 
 ## 📦 Tech Stack
 
-* **Frontend:** React, Vite, TypeScript ,Tailwind
-* **Backend:** Node.js, Express, TypeScript
-* **Database:** PostgreSQL
-* **Reverse Proxy:** Nginx
-* **Containerization:** Docker & Docker Compose
+### Frontend
+- React  
+- Vite  
+- TypeScript  
+- Tailwind CSS  
+
+### Backend
+- Node.js  
+- Express  
+- TypeScript  
+
+### Database
+- PostgreSQL  
+
+### Authentication
+- Google OAuth  
+- Gmail OTP verification  
+
+### Infrastructure
+- Docker  
+- Docker Compose  
+- Nginx Reverse Proxy  
+
+---
+
+## 🐳 Dockerized Deployment
+
+Tymer is fully containerized and runs with a single command.
 
 ---
 
@@ -182,5 +355,6 @@ This repository is designed for:
 * Production‑style Docker deployments
 
 If Docker is running, **one command is all you need** 🚀
+
 
 
